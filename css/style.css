@@ -3486,7 +3486,7 @@ h6 {
 }
 
 /*hide images with class ‘logo’ from mobile versions*/
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width : 979px) {
 img.logo {
 display: none;
 }
