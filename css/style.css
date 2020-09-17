@@ -3485,6 +3485,14 @@ h6 {
  padding: 0 0 100px 200px;
 }
 
+.fib-image {
+    display: none;
+}
 
+@media screen and (min-width: 720px) {
+    .fib-image {
+        display: block;
+    }
+}
 
 /*# sourceMappingURL=style.css.map */
