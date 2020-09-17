@@ -3485,7 +3485,7 @@ h6 {
  padding: 0 0 100px 200px;
 }
 
-@media (max-width:629px) {
+@media (max-width:979px) {
   img#optionalstuff {
     display: none;
   }
