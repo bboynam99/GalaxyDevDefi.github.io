@@ -3485,19 +3485,10 @@ h6 {
  padding: 0 0 100px 200px;
 }
 
-.logo-image {
-    display: none;
-}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { 
 
-@media screen and (min-width: 720px) {
-    .logo-image {
-        display: block;
-    }
-}
+.logo { display: none }
 
-@media only screen and (max-width: 480px) {
-.responsive .logo {
-opacity: 0!important
-}}
+}
 
 /*# sourceMappingURL=style.css.map */
