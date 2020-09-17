@@ -3495,4 +3495,9 @@ h6 {
     }
 }
 
+@media only screen and (max-width: 480px) {
+.responsive .logo {
+opacity: 0!important
+}}
+
 /*# sourceMappingURL=style.css.map */
