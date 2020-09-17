@@ -3480,4 +3480,11 @@ h6 {
     margin-top: 35px; } }
 /*---------------------------------------------------- */
 
+.left {
+ float: left;
+ padding: 0 0 100px 200px;
+}
+
+
+
 /*# sourceMappingURL=style.css.map */
