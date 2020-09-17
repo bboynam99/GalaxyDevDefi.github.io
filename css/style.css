@@ -3485,12 +3485,12 @@ h6 {
  padding: 0 0 100px 200px;
 }
 
-.fib-image {
+.logo-image {
     display: none;
 }
 
 @media screen and (min-width: 720px) {
-    .fib-image {
+    .logo-image {
         display: block;
     }
 }
