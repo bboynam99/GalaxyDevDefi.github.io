@@ -3491,4 +3491,8 @@ img.logo {
 display: none;
 }
 
+@media screen and (max-width:800px) {
+#logo .logo.image img {display: none !important;}
+}
+
 /*# sourceMappingURL=style.css.map */
