@@ -107,36 +107,13 @@ responsive: {
 
 
 
-//------- mailchimp --------//  
-function mailChimp() {
-    $('#mc_embed_signup').find('form').ajaxChimp();
+//------- navscroll --------//  
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbarSupportedContent").style.top = "0";
+  } else {
+    document.getElementById("navbarSupportedContent").style.top = "-50px";
+  }
 }
-mailChimp();
-
-//-------- Counter js --------//
-$(window).on("load", function() {
-
-
-    $('.portfolio-filter ul li').on('click', function () {
-        $('.portfolio-filter ul li').removeClass('active');
-        $(this).addClass('active');
-
-        var data = $(this).attr('data-filter');
-        $workGrid.isotope({
-            filter: data
-        });
-    });
-
-    if (document.getElementById('portfolio')) {
-        var $workGrid = $('.portfolio-grid').isotope({
-            itemSelector: '.all',
-            percentPosition: true,
-            masonry: {
-                columnWidth: '.grid-sizer'
-            }
-        });
-    }
-});
-
-
-})(jQuery)
