@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Galaxy.dev</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/animate-css/animate.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+   
+    
+    
+
+    <!--================Home Banner Area =================-->
+    <section class="home_banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-6 col-xl-5 offset-xl-7">
+                        <div class="banner_content">
+                            <h3>Galaxy.dev<br/>$GLXY</h3>
+                            <p>A smart contract ran network that incorporates with a trustless and community driven portfolio of cryptocurrencies.</p>
+                            <a class="banner_btn" href="#">Apply For Presale Whitelist<i class="ti-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Home Banner Area =================-->
+
+    <!--================Service  Area =================-->
+    <section class="service-area area-padding">
+        <div class="container">
+            <div class="row">
+                <!-- Single service -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line fa-stack-1x fa-inverse"></i>
+                        </div>
+                        <div class="service-content">
+                            <h5>Deflationary</h5>
+                            <p>Galaxy source code has token burns efficiently implemented. EVERY transaction will have a 1% burn. This intentionally includes Buys, Sells, and all GLXY Token Transfers between unique addresses.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single service -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="fas fa-balance-scale fa-stack-1x fa-inverse"></i>
+                        </div>
+                        <div class="service-content">
+                            <h5>Interchange</h5>
+                            <p>Intuitive smart exchange dispatching, including, but not limited routing between, Kyber, 0x Relays, Uniswap, & Balancer.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Single service -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-pie fa-stack-1x"></i>
+                        </div>
+                        <div class="service-content">
+                            <h5>Management</h5>
+                            <p>Round-the-clock arbitrary exchange chances continually support Galaxy's portfolio weights and tokens in a sustained proportion.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--================Service Area end =================-->
+
+
+    <!--================About  Area =================-->
+    <section class="about-area area-padding-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+                    <div class="area-heading">
+                        <h4>Balancer Pool<br>Automated Index Fund </h4>
+                        <h6>Balancer is a protocol for programmable liquidity </h6>
+
+                        <p>The beginning two tokens supplied to our portfolio will be GLXY / WETH. The Galaxy community will vote for the 3 remaining spots. Then Balancer will maintain a share of the portfolio's value through the use of a smart-contract.</p>
+                    </div>
+<!-- Styles -->
+<style>
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+
+</style>
+
+<!-- Resources -->
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/frozen.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+<!-- Chart code -->
+<script>
+am4core.ready(function() {
+
+// Themes begin
+am4core.useTheme(am4themes_frozen);
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+var chart = am4core.create("chartdiv", am4charts.PieChart3D);
+chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
+
+chart.data = [
+  {
+    country: "GLXY",
+    litres: 40
+  },
+  {
+    country: "WETH",
+    litres: 30
+  },
+  {
+    country: "Voted",
+    litres: 10
+  },
+  {
+    country: "Voted",
+    litres: 10
+  },
+  {
+    country: "Voted",
+    litres: 10
+  },
+  
+];
+
+chart.innerRadius = am4core.percent(40);
+chart.depth = 120;
+
+chart.legend = new am4charts.Legend();
+
+var series = chart.series.push(new am4charts.PieSeries3D());
+series.dataFields.value = "litres";
+series.dataFields.depthValue = "litres";
+series.dataFields.category = "country";
+series.slices.template.cornerRadius = 5;
+series.colors.step = 3;
+
+}); // end am4core.ready()
+</script>
+
+<!-- HTML -->
+<div id="chartdiv"></div>
+
+                    
+                </div>
+            </div>
+        </div>
+		
+    </section>
+    <!--================About Area End =================-->
+
+    <!--================Feature  Area =================-->
+    <section class="feature-area area-padding bg_one">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="offset-lg-6 col-lg-6">
+                    <div class="area-heading light">
+                        <h4>Easy <br>Management</h4>
+                        <p>GLXY is ERC20, making it super easy to store on well known wallets. Including Metamask, Trust Wallet, MyEtherWallet, Trezor and more.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-">
+                            <div class="single-feature d-flex">
+                                <div class="feature-icon">
+                                    <i class="fas fa-balance-scale"></i>
+                                </div>
+                                <div class="single-feature-content">
+                                    <h5>Balancer</h5>
+                                    <p>Participate in our Balancer pool by using a PC or Web3 Enabled mobile browser; Trust Wallet. This pool is automatically rebalanced and also generates fees for contributors. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-">
+                            <div class="single-feature d-flex">
+                                <div class="feature-icon">
+                                    <i class="fas fa-coins"></i>
+                                </div>
+                                <div class="single-feature-content">
+                                    <h5>Exchange</h5>
+                                    <p>In the beginning $GLXY is obtainable from Uniswap. For those with a mobile device only, we have created a Tutorial on our Medium page showing how to use Uniswap with Trust Wallet. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================Feature Area End =================-->
+
+
+    <!--================About  Area =================-->
+    <section class="statics-area area-padding">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-5">
+                    <div class="image-box">
+                        <img src="img/banner/about3.png" alt="">
+                    </div>
+                </div>
+
+                <div class="offset-lg-1 col-lg-6">
+                    <div class="area-heading">
+                        <h4>The<br>Celestial Portfolio </h4>
+                        <h6>Community Voted makes this supremely good </h6>
+
+                        <p>Our Celestial portfolio is weighted as follows: <br>40% - GLXY Uniswap LP <br>30% - wETH <br>10% - Community Voted Token (Example: LINK, YFI, Any ERC20 Token) <br>10% - Community Voted Token <br>10% - Community Voted Token <br>We structured the weighting to maximize the returns for contributors. We put the biggest weight towards Ethereum in view of the fact that the Ethereum protocol is used for a majority of projects.</p>
+                    </div>
+                    <div class="single-data">
+                        <i class="ti-paint-bucket"></i>
+                        <p>Custom Community Chosen Portfolio</p>
+                    </div>
+                    <div class="single-data">
+                        <i class="ti-check-box"></i>
+                        <p>100% Trustless and Transparent</p>
+                    </div>
+                    <div class="single-data">
+                        <i class="ti-ruler-pencil"></i>
+                        <p>Automated Smart Contract Management</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================About Area End =================-->
+
+    <!--================ Start Brands Area =================-->
+    <section class="brands-area area-padding-bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="owl-carousel brand-carousel">
+                        <!-- single-brand -->
+                        <div class="single-brand-item d-table">
+                            <div class="d-table-cell">
+                                <img src="img/logo/1.png" alt="">
+                            </div>
+                        </div>
+                        <!-- single-brand -->
+                        <div class="single-brand-item d-table">
+                            <div class="d-table-cell">
+                                <img src="img/logo/2.png" alt="">
+                            </div>
+                        </div>
+                        <!-- single-brand -->
+                        <div class="single-brand-item d-table">
+                            <div class="d-table-cell">
+                                <img src="img/logo/3.png" alt="">
+                            </div>
+                        </div>
+                        <!-- single-brand -->
+                        <div class="single-brand-item d-table">
+                            <div class="d-table-cell">
+                                <img src="img/logo/4.png" alt="">
+                            </div>
+                        </div>
+                        <!-- single-brand -->
+                        <div class="single-brand-item d-table">
+                            <div class="d-table-cell">
+                                <img src="img/logo/5.png" alt="">
+                            </div>
+                        </div>
+                        <!-- single-brand -->
+                        <div class="single-brand-item d-table">
+                            <div class="d-table-cell">
+                                <img src="img/logo/3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Brands Area =================-->
+
+
+
+    <!-- ================ start footer Area ================= -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+                    <h4>RISK DISCLOSURE</h4>
+                    <p>Please use at your own risk. Galaxy.dev is not a registered broker, analyst or investment advisor. Everything provided on this site is purely for guidance, informational and educational purposes. All information contained herein should be independently verified and confirmed. We do not accept any liability for any loss or damage whatsoever caused in reliance upon such information or services.</p>
+                    <div class="footer-logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+                    <h4>DISCLAIMER</h4>
+                    <div class="footer-address">
+                        <p>Trading and investing in cryptocurrencies involves substantial risk of loss and is not suitable for everyone. Any content on this site should not be relied upon as advice or construed as providing recommendations of any kind. It is your responsibility to confirm and decide when to trade our token. We advise all parties to check in advance whether they are legally entitled to purchase the products and/or services presented on this website.</p>
+                       
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+                    <h4>Social Links</h4>
+                    <ul>
+                        <li><a href="https://t.me/GalaxyDefi"><i class="fab fa-telegram-plane fa-5x"></i></a><a href="https://t.me/GalaxyDefi">t.me/GalaxyDefi</a></li>
+                        <li><a href="https://medium.com/galaxydev"><i class="fab fa-medium-m fa-5x"></i></a><a href="https://medium.com/galaxydev"> medium.com/galaxydev</a></li>
+                        <li><a href="https://twitter.com/GalaxyDevelop"><i class="fab fa-twitter fa-5x"></i></a><a href="https://twitter.com/GalaxyDevelop">twitter.com/GalaxyDevelop</a></li>
+                        
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-8 mb-4 mb-xl-0 single-footer-widget">
+                    <h4>Token Information</h4>
+                    <p>Ticker: GLXY</p>
+					<p>Initial Supply: 101,000,000 GLXY </p>
+					<p>Token Contract Address: </p>
+					<p>Balancer Pool Address: </p>
+
+                    
+
+            </div>
+        </div>
+        <div class="footer-bottom row align-items-center text-center text-lg-left no-gutters">
+        
+
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/mail-script.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/jquery.form.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/mail-script.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>
