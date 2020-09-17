@@ -3485,10 +3485,10 @@ h6 {
  padding: 0 0 100px 200px;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { 
-
-.logo { display: none }
-
+/*hide images with class ‘logo’ from mobile versions*/
+@media only screen and (max-width : 767px) {
+img.logo {
+display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
